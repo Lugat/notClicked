@@ -15,6 +15,7 @@
       
       div {
         padding:50px;
+        color:white;
         display:inline-block;
       }
       
@@ -24,7 +25,7 @@
       
       $(function() {
         
-        $('button').notClicked(function() {
+        $('.untouchable').notClicked(function() {
           alert('Hammertime!');
         });
         
@@ -40,9 +41,11 @@
       
       <div style="background:#0f0">
         
-        <div style="background:#00f">
+        <div style="background:#00f" class="untouchable">
+          
+          Cant't touch
       
-          <button type="button">Can't touch this!</button>
+          <button type="button">this!</button>
 
         </div>
         
