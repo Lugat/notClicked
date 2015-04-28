@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <title>notClicked</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="notClicked.js"></script>
+    
+    <style>
+      
+      div {
+        display:inline-block;
+      }
+      
+    </style>
+    
+    <script>
+      
+      $(function() {
+        
+        $('button').notClicked(function() {
+          alert('Hammertime!');
+        });
+        
+      });
+      
+    </script>
+    
+  </head>
+  
+  <body>
+    
+    <div style="padding:50px;background:#f00">
+      
+      <div style="padding:50px;background:#0f0">
+        
+        <div style="padding:50px;background:#00f">
+      
+          <button type="button">Can't touch this!</button>
+
+        </div>
+        
+      </div>
+          
+    </div>
+    
+  </body>
+  
+</html>
