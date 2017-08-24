@@ -3,16 +3,16 @@
   $.fn.notClicked = function(callback) {
     
     return this.each(function() {
-      
-      var $this = $(this);
-      
-      $(document).click(function(e) {
+            
+      $(document).click((function(e) {
+        
+        var $this = $(this);
                         
         if (!$this.is(e.target) && $this.has(e.target).length === 0) {
           callback.apply(this);
         }
         
-      });
+      }).bind(this));
       
     });
 
